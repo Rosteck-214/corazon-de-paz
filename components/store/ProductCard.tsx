@@ -17,7 +17,7 @@ export default function ProductCard({ product, supabaseUrl }: Props) {
   const inStock = product.product_variants?.some((v) => v.stock > 0) ?? false
 
   return (
-    <Link href={`/productos/${product.slug}`} className="card-product block">
+    <Link href={`/productos/${product.slug}`} className="card-product group block">
       {/* Image */}
       <div className="relative aspect-square overflow-hidden bg-cream">
         {imageUrl ? (

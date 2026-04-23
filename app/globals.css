@@ -80,7 +80,7 @@ body {
   }
 
   .card-product {
-    @apply group relative bg-warm-white border border-gold-light/30 overflow-hidden transition-all duration-500 hover:shadow-xl hover:border-gold/60;
+    @apply relative bg-warm-white border border-gold-light/30 overflow-hidden transition-all duration-500 hover:shadow-xl hover:border-gold/60;
   }
 
   .input-field {
