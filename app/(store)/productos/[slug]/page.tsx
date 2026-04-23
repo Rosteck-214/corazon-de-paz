@@ -85,7 +85,7 @@ export default function ProductPage({ params }: { params: Promise<{ slug: string
   const crafting = matchedVariant?.crafting_days ?? product.crafting_days
 
   function handleAddToCart() {
-    if (!matchedVariant) {
+    if (!product || !matchedVariant) {
       toast.error('Por favor selecciona todas las opciones')
       return
     }
