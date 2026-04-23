@@ -31,6 +31,10 @@ const config: Config = {
           light: '#6B2D2D',
         },
         sage: '#8A9E8A',
+        text: {
+          body: '#3D2B1A',
+          muted: '#7A6555',
+        },
       },
       fontFamily: {
         serif: ['Cormorant Garamond', 'Georgia', 'serif'],
