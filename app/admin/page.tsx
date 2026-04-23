@@ -148,7 +148,7 @@ export default async function AdminDashboard() {
                   <li key={v.sku} className="px-4 py-3 flex items-center justify-between">
                     <div>
                       <p className="font-sans text-xs text-burgundy line-clamp-1">
-                        {(v.products as { name: string } | null)?.name ?? '—'}
+                        {(v.products as unknown as { name: string } | null)?.name ?? '—'}
                       </p>
                       <p className="font-sans text-[10px] text-text-muted">{v.sku}</p>
                     </div>

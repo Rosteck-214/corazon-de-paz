@@ -94,7 +94,7 @@ export async function POST(req: NextRequest) {
       await supabase.rpc('decrement_stock', {
         p_variant_id: item.variantId,
         p_quantity: item.quantity,
-      }).catch(() => null) // non-blocking, handle gracefully
+      })
     }
 
     // Create payment record
